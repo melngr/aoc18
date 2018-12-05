@@ -11,6 +11,7 @@ def sol():
     global a_ans, b_ans
     f = open( os.path.join( os.path.dirname(__file__), "../inputs/day01.txt" ), 'r' )
     vals = [ int(l) for l in f.readlines() ]
+    f.close()
 
     # part a
     a_ans = sum(vals)

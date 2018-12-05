@@ -13,6 +13,8 @@ def sol():
     global a_ans, b_ans
     f = open( os.path.join( os.path.dirname(__file__), "../inputs/day03.txt" ), 'r' )
     claims = [ tuple( int(d) for d in re.findall(r"\d+", l) ) for l in f.readlines() ]
+    f.close()
+
     claimed = ddict( set )
 
     # part a

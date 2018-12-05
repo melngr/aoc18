@@ -15,6 +15,8 @@ def sol():
     f = open( os.path.join( os.path.dirname(__file__), "../inputs/day04.txt" ), 'r' )
     notes = sorted( [ tuple( int(d) if d.isdigit() else d for d in re.findall(r"\w+", l) )
             for l in f.readlines() ], key=lambda x: (x[0], x[1], x[2], x[3], x[4]) )
+    f.close()
+
     minutes = ddict(list)
 
     # part a

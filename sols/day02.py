@@ -21,6 +21,7 @@ def sol():
     global a_ans, b_ans
     f = open( os.path.join( os.path.dirname(__file__), "../inputs/day02.txt" ), 'r' )
     strs = [ s.strip() for s in f.readlines() ]
+    f.close()
 
     # part a
     two, three = 0, 0
